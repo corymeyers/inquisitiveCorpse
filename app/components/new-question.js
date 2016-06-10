@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         notes: this.get('notes'),
       };
-      this.set('addNewRental', false);
+      this.set('addNewQuestion', false);
       this.sendAction('save2', params);
     }
   }
