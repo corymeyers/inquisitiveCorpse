@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'inq-corpse',
     environment: environment,
+    firebase: {
+    apiKey: "AIzaSyDknvywKazuWgepe74-jzyo82TXRazIPr4",
+    authDomain: "inquisitive-corpse.firebaseapp.com",
+    databaseURL: "https://inquisitive-corpse.firebaseio.com",
+    storageBucket: "inquisitive-corpse.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

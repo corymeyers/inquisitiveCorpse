@@ -3,6 +3,8 @@
 
 <ul>
   {{#each model as |question|}}
-     <li>{{question.corpse}} - authored by: {{question.author}} <br>Additional notes: {{question.notes}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
+
+{{new-question save2="save3"}}
