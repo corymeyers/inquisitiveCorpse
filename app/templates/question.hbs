@@ -4,3 +4,13 @@
 
 <h2>Originally Authored By: {{model.author}}</h2>
 <h4>Additional Non-Sequitors: {{model.notes}}</h4>
+
+<br><br><br>
+
+<h3>Answers:</h3>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.ans}}<br>Answered by:{{answer.author}}</li>
+  {{/each}}
+</ul>
