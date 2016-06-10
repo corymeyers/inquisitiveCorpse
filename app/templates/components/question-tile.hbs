@@ -1,3 +1,5 @@
-<li>{{question.corpse}}<br>
-  Authored by: {{question.author}}<br>
-  {{question.notes}}</li>
+<li><h2>{{question.corpse}}</h2><br>
+    Originally Authored By: {{question.author}}<br>
+    Additional Non-Sequitors: {{question.notes}}
+    {{update-question question=question update="update"}}
+</li>
