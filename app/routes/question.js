@@ -3,11 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model(params) {
     return Ember.RSVP.hash({
-      questions: this.store.findRecord('question', params.question_id)
-  //  return this.store.findRecord('question', params.question_id);
-  //  return this.store.findRecord('answer', params.answer_id);
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
  });
-  },
+},
    actions: {
      update(question, params) {
        Object.keys(params).forEach(function(key) {
